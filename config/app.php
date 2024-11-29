@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool)env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -185,7 +185,10 @@ return [
         /*
          * Package Service Providers...
          */
-
+        BenSampo\Enum\EnumServiceProvider::class,
+        RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+        Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
+        SocialiteProviders\Manager\ServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -210,6 +213,14 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+
+        /*
+        * Package Aliases...
+        */
+        'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
     ])->toArray(),
 
 ];
