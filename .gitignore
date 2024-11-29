@@ -1,0 +1,76 @@
+/.phpunit.cache
+/node_modules
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.env.production
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Linux
+*~
+
+# KDE directory preferences
+.directory
+
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
+
+#-------------------------
+# Environment Files
+#-------------------------
+# These should never be under version control,
+# as it poses a security risk.
+
+# Docker
+.vagrant
+Vagrantfile
+
+#-------------------------
+# Test Files
+#-------------------------
+tests/coverage*
+
+# Don't save phpunit under version control.
+phpunit
+
+#-------------------------
+# Composer
+#-------------------------
+vendor/
+
+# Jetbrains editors (PHPStorm, etc)
+.idea/
+*.iml
+
+# Visual Studio Code
+.vscode/
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Laravel
+composer.lock
+package-lock.json
